@@ -1,0 +1,10 @@
+{
+  "name": "babystamp-web",
+  "description": "babystamp web",
+  "version": "1.0",
+  "dependencies": {
+    "exif": "^0.6.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jimp": "^0.13.0"
+  }
+}
