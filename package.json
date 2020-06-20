@@ -3,7 +3,8 @@
   "description": "babystamp web",
   "version": "0.0.1",
   "scripts": {
-    "build": "netlify-lambda build express"
+    "dev": "netlify-lambda serve functions",
+    "build": "netlify-lambda build api"
   },
   "dependencies": {
     "exif": "^0.6.0",
