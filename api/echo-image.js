@@ -1,6 +1,6 @@
 var fs = require("fs");
 
-exports.handler = async (event) => {
+exports.handler = async (event, context, callback) => {
   let CORSHeaders = {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Credentials": "true",
