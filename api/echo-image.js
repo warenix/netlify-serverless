@@ -9,7 +9,7 @@ exports.handler = async (event) => {
       "access-control-allow-origin, origin, accept, x-requested-with, content-type, access-control-request-method, access-control-request-headers",
   };
 
-  if (process.env.ENABLE_CORS && event.httpMethod === "OPTIONS") {
+  if (event.httpMethod === "OPTIONS") {
     const response = {
       statusCode: 200,
       headers: {
