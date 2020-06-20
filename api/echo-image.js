@@ -32,8 +32,9 @@ exports.handler = async (event) => {
     headers: {
       "Content-type": "image/jpeg",
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
-      "Access-Control-Allow-Headers": "access-control-allow-origin,content-type",
+      "Access-Control-Allow-Credentials": "true",
+      "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+      "Access-Control-Allow-Headers": "Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers",
     },
     body: buff.toString("base64"),
     isBase64Encoded: true,
