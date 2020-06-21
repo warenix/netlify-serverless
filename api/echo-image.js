@@ -48,7 +48,7 @@ exports.handler = async (event, context, callback) => {
   // };
 
   CORSHeaders[""];
-  return {
+  const response = {
     statusCode: 200,
     headers: Object.assign({}, CORSHeaders, {
       "Content-Type": "image/jpeg",
@@ -56,4 +56,6 @@ exports.handler = async (event, context, callback) => {
     body: buff.toString("base64"),
     isBase64Encoded: true,
   };
+  callback(null, response);
+  return;
 };
