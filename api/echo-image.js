@@ -13,7 +13,12 @@ exports.handler = async (event, context, callback) => {
     const response = {
       statusCode: 200,
       headers: {
-        CORSHeaders,
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "GET,HEAD,OPTIONS,POST,PUT",
+        "Access-Control-Allow-Headers":
+          "access-control-allow-origin, origin, accept, x-requested-with, content-type, access-control-request-method, access-control-request-headers",
       },
       body: JSON.stringify({ message: "You can use CORS" }),
     };
