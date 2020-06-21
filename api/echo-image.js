@@ -34,7 +34,7 @@ exports.handler = async (event, context, callback) => {
   console.log("j", j);
   console.log("j.image", j.image);
 
-  var buff = new Buffer(
+  var buff = Buffer.from(
     j.image.replace(/^data:image\/(png|gif|jpeg);base64,/, ""),
     "base64"
   );
